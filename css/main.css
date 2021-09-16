@@ -1,0 +1,537 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+#phone {
+  padding-top: 5rem;
+}
+
+@media screen and (min-width: 60rem) {
+  #phone {
+    padding: 0;
+  }
+}
+
+#phone .bgHelper {
+  -webkit-box-shadow: 14px 10px 42px 0px lightgray;
+          box-shadow: 14px 10px 42px 0px lightgray;
+  width: 15.5rem;
+  height: 30.5rem;
+  margin: 0 auto;
+  border: 10px solid white;
+  border-radius: 32px;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 60rem) {
+  #phone .bgHelper {
+    margin: 0;
+  }
+}
+
+#phone #topBar {
+  position: relative;
+  padding: 1.5rem 1rem 0.5rem 1rem;
+  background-image: -webkit-gradient(linear, right top, left top, from(#e942ff), to(#8838ff));
+  background-image: linear-gradient(to Left, #e942ff, #8838ff);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10px 30px auto 10px;
+      grid-template-columns: 10px 30px auto 10px;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "arrow avatar name menu" "arrow avatar status menu";
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#phone #topBar::before {
+  position: absolute;
+  content: "";
+  left: 50px;
+  right: 50px;
+  top: 0;
+  height: 20px;
+  background-color: white;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+#phone #topBar .arrow {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: arrow;
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+#phone #topBar .arrow::before, #phone #topBar .arrow::after {
+  position: absolute;
+  content: "";
+  background-color: white;
+  height: 2px;
+  left: 4px;
+  width: 6px;
+  border-radius: 2px;
+}
+
+#phone #topBar .arrow::before {
+  top: 7px;
+  -webkit-transform: rotateZ(-60deg);
+          transform: rotateZ(-60deg);
+}
+
+#phone #topBar .arrow::after {
+  bottom: 7px;
+  -webkit-transform: rotateZ(60deg);
+          transform: rotateZ(60deg);
+}
+
+#phone #topBar .avatar {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: avatar;
+  width: 30px;
+  height: 30px;
+}
+
+#phone #topBar .avatar img {
+  width: 100%;
+  border-radius: 15px;
+  border: 1px solid white;
+}
+
+#phone #topBar h2 {
+  padding-left: 10px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: name;
+  color: white;
+  font-weight: 500;
+  font-size: 0.8rem;
+  justify-self: baseline;
+}
+
+#phone #topBar p {
+  padding-left: 10px;
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: status;
+  color: #d89eff;
+  font-size: 0.6rem;
+  justify-self: baseline;
+}
+
+#phone #topBar .menu {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: menu;
+  width: 2px;
+  height: 2px;
+  position: relative;
+  background-color: white;
+  border-radius: 1px;
+}
+
+#phone #topBar .menu::before, #phone #topBar .menu::after {
+  position: absolute;
+  content: "";
+  background-color: white;
+  border-radius: 1px;
+  inset: 0;
+}
+
+#phone #topBar .menu::before {
+  -webkit-transform: translateY(6px);
+          transform: translateY(6px);
+}
+
+#phone #topBar .menu::after {
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
+}
+
+#phone #chatWindow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #f5f3f7;
+  padding: 10px;
+}
+
+#phone #chatWindow .me {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  border-radius: 8px;
+  border-bottom-left-radius: 4px;
+  margin-top: 10px;
+  max-width: 70%;
+  padding: 7px 10px;
+  color: #9241c8;
+  background-color: #edeaf0;
+}
+
+#phone #chatWindow .friend {
+  -webkit-box-shadow: 3px 3px 7px 0px lightgray;
+          box-shadow: 3px 3px 7px 0px lightgray;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-top: 10px;
+  color: #6e5d7e;
+  margin-top: 10px;
+  max-width: 70%;
+  padding: 7px 10px;
+  border-radius: 10px;
+  border-bottom-right-radius: 4px;
+  background-color: white;
+}
+
+#phone #chatWindow p {
+  font-size: 0.5rem;
+}
+
+#phone #chatWindow p:first-of-type {
+  margin-top: 0;
+}
+
+#phone #chatWindow .imageBox {
+  margin-top: 10px;
+  text-align: right;
+}
+
+#phone #chatWindow .imageBox img {
+  margin-left: 5px;
+  width: 45px;
+  border-radius: 8px;
+}
+
+#phone #chatWindow .selection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#e942ff), to(#8838ff));
+  background-image: linear-gradient(to Right, #e942ff, #8838ff);
+  color: white;
+  max-width: unset;
+  width: 80%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#phone #chatWindow .selection .radioBtn {
+  color: violet;
+  font-size: 0.8em;
+  display: -ms-grid;
+  display: grid;
+  gap: 0.5rem;
+  -ms-grid-columns: min-content auto;
+      grid-template-columns: -webkit-min-content auto;
+      grid-template-columns: min-content auto;
+}
+
+#phone #chatWindow .selection .radioBtn input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+#phone #chatWindow .selection .radioBtn input:checked + .controlRadioBtn::before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+#phone #chatWindow .selection .radioBtn .controlRadioBtn {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid #e570ff;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
+#phone #chatWindow .selection .radioBtn .controlRadioBtn::before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  background-color: white;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+#phone #chatWindow .selection .labelRadioBtn {
+  font-size: 0.6rem;
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+  color: white;
+}
+
+#phone #chatWindow .selection h3 {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+#phone #write {
+  background-color: #f5f3f7;
+  padding: 8px;
+}
+
+#phone #write .inputBox {
+  position: relative;
+}
+
+#phone #write .inputBox input {
+  width: 100%;
+  height: 30px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 10px;
+  border: none;
+  font-size: 0.6rem;
+  padding: 8px;
+  padding-left: 20px;
+}
+
+#phone #write .inputBox .submitBox {
+  position: absolute;
+  width: 20px;
+  top: 5px;
+  right: 5px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #3e2753;
+}
+
+#phone #write .inputBox .submitBox::before, #phone #write .inputBox .submitBox::after {
+  position: absolute;
+  content: "";
+  right: 6px;
+  width: 7px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+#phone #write .inputBox .submitBox::before {
+  top: 7px;
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+}
+
+#phone #write .inputBox .submitBox::after {
+  bottom: 7px;
+  -webkit-transform: rotateZ(-45deg);
+          transform: rotateZ(-45deg);
+}
+
+#title {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 5rem;
+  width: 19rem;
+}
+
+@media screen and (min-width: 60rem) {
+  #title {
+    text-align: left;
+    margin: 0;
+    width: 30rem;
+    padding: 0;
+  }
+}
+
+#title h1 {
+  color: #3e2753;
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+
+#title p {
+  color: #a39daa;
+  line-height: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p,
+input,
+label,
+span {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+
+body::before {
+  position: absolute;
+  content: "";
+  width: 74%;
+  height: 47rem;
+  top: -16rem;
+  left: -7rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e942ff), to(#8838ff));
+  background-image: linear-gradient(to Bottom, #e942ff, #8838ff);
+  border-bottom-left-radius: 30rem;
+  border-bottom-right-radius: 30rem;
+  z-index: -1;
+}
+
+@media screen and (min-width: 30rem) {
+  body::before {
+    width: 65%;
+    height: 47rem;
+    top: -15rem;
+    left: -7rem;
+  }
+}
+
+@media screen and (min-width: 40rem) {
+  body::before {
+    width: 60%;
+    height: 49rem;
+    top: -15rem;
+    left: -5rem;
+  }
+}
+
+@media screen and (min-width: 50rem) {
+  body::before {
+    width: 60%;
+    height: 50rem;
+    top: -15rem;
+    left: -4rem;
+  }
+}
+
+@media screen and (min-width: 60rem) {
+  body::before {
+    width: 50%;
+    height: 50rem;
+    top: -12rem;
+    left: -21rem;
+  }
+}
+
+@media screen and (min-width: 70rem) {
+  body::before {
+    width: 29%;
+    height: 52rem;
+    top: -12rem;
+    left: -9rem;
+  }
+}
+
+@media screen and (min-width: 80rem) {
+  body::before {
+    width: 26%;
+    height: 50rem;
+    top: -12rem;
+    left: -3rem;
+  }
+}
+
+@media screen and (min-width: 100rem) {
+  body::before {
+    width: 29%;
+    height: 56rem;
+    top: -12rem;
+    left: -5rem;
+  }
+}
+
+body::after {
+  position: absolute;
+  content: "";
+  width: 70%;
+  height: 30rem;
+  bottom: 0rem;
+  right: -6rem;
+  background-color: #f7f6f9;
+  border-top-left-radius: 30rem;
+  border-top-right-radius: 30rem;
+  z-index: -1;
+}
+
+@media screen and (min-width: 40rem) {
+  body::after {
+    width: 57%;
+  }
+}
+
+@media screen and (min-width: 60rem) {
+  body::after {
+    height: 44rem;
+    bottom: 0rem;
+    right: -14rem;
+    width: 49%;
+  }
+}
+
+body main {
+  padding-bottom: 5rem;
+}
+
+@media screen and (min-width: 60rem) {
+  body main {
+    width: 100vw;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 5rem;
+  }
+}
+
+@media screen and (min-width: 70rem) {
+  body main {
+    gap: 7rem;
+  }
+}
+
+@media screen and (min-width: 80rem) {
+  body main {
+    gap: 10rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */

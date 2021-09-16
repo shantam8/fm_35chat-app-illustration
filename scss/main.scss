@@ -1,12 +1,134 @@
 @import "colors";
 @import "fonts";
 
+@import "phone";
+@import "title";
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
+h1,
+h2,
+h3,
+p,
+input,
+label,
+span {
   font-family: "Rubik", sans-serif; // 4 5 7
+  font-weight: 400;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 74%;
+    height: 47rem;
+    top: -16rem;
+    left: -7rem;
+    background-image: linear-gradient(to Bottom, $lightMagenta, $lightViolet);
+    border-bottom-left-radius: 30rem;
+    border-bottom-right-radius: 30rem;
+    z-index: -1;
+
+    @media screen and (min-width: 30rem) {
+      width: 65%;
+      height: 47rem;
+      top: -15rem;
+      left: -7rem;
+    }
+    @media screen and (min-width: 40rem) {
+      width: 60%;
+      height: 49rem;
+      top: -15rem;
+      left: -5rem;
+    }
+    @media screen and (min-width: 50rem) {
+      width: 60%;
+      height: 50rem;
+      top: -15rem;
+      left: -4rem;
+    }
+
+    @media screen and (min-width: 60rem) {
+      width: 50%;
+      height: 50rem;
+      top: -12rem;
+      left: -21rem;
+    }
+    @media screen and (min-width: 70rem) {
+      width: 29%;
+      height: 52rem;
+      top: -12rem;
+      left: -9rem;
+    }
+    @media screen and (min-width: 80rem) {
+      width: 26%;
+      height: 50rem;
+      top: -12rem;
+      left: -3rem;
+    }
+    @media screen and (min-width: 100rem) {
+      width: 29%;
+      height: 56rem;
+      top: -12rem;
+      left: -5rem;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 70%;
+    height: 30rem;
+    bottom: 0rem;
+    right: -6rem;
+    background-color: lighten($lightGrayishViolet, 1%);
+    border-top-left-radius: 30rem;
+    border-top-right-radius: 30rem;
+    z-index: -1;
+
+    @media screen and (min-width: 40rem) {
+      width: 57%;
+    }
+
+    @media screen and (min-width: 60rem) {
+      height: 44rem;
+      bottom: 0rem;
+      right: -14rem;
+      width: 49%;
+    }
+
+    @media screen and (min-width: 70rem) {
+    }
+
+    @media screen and (min-width: 80rem) {
+    }
+  }
+
+  main {
+    padding-bottom: 5rem;
+    @media screen and (min-width: 60rem) {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5rem;
+    }
+
+    @media screen and (min-width: 70rem) {
+      gap: 7rem;
+    }
+
+    @media screen and (min-width: 80rem) {
+      gap: 10rem;
+    }
+  }
 }

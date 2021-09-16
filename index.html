@@ -11,58 +11,79 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="./css/main.css" />
 
     <title>Frontend Mentor | [Challenge Name Here]</title>
   </head>
   <body>
     <main>
       <section id="phone">
-        <div class="topBar">
-          <div class="arrow"></div>
+        <div class="bgHelper">
+          <div id="topBar">
+            <div class="arrow"></div>
 
-          <div class="avatar">
-            <img src="./images/avatar.jpg" alt="avatar" />
+            <div class="avatar">
+              <img src="./images/avatar.jpg" alt="avatar" />
+            </div>
+
+            <h2>Samuel Green</h2>
+            <p>Available to Walk</p>
+
+            <div class="menu"></div>
           </div>
 
-          <h3>Samuel Green</h3>
-          <p>Available to Walk</p>
+          <div id="chatWindow">
+            <p class="me">That sounds great. I’d be happy with that.</p>
+            <p class="me">
+              Could you send over some pictures of your dog, please?
+            </p>
 
-          <div class="menu"></div>
-        </div>
+            <div class="imageBox">
+              <img src="./images/dog-image-1.jpg" alt="dog1" />
+              <img src="./images/dog-image-2.jpg" alt="dog2" />
+              <img src="./images/dog-image-3.jpg" alt="dog3" />
+            </div>
 
-        <div class="chatWindow">
-          <p class="me">That sounds great. I’d be happy with that.</p>
-          <p class="me">
-            Could you send over some pictures of your dog, please?
-          </p>
+            <p class="friend">Here are a few pictures. She’s a happy girl!</p>
+            <p class="friend">Can you make it?</p>
+            <p class="me">
+              She looks so happy! The time we discussed works. How long shall I
+              take her out for?
+            </p>
 
-          <div class="imageBox">
-            <img src="./images/dog-image-1.jpg" alt="dog1" />
-            <img src="./images/dog-image-2.jpg" alt="dog2" />
-            <img src="./images/dog-image-3.jpg" alt="dog3" />
+            <div class="me selection">
+              <label class="radioBtn">
+                <span class="input">
+                  <input type="radio" name="radio" />
+                  <span class="controlRadioBtn"></span>
+                </span>
+                <span class="labelRadioBtn">30 minute walk</span>
+              </label>
+
+              <h3>$29</h3>
+            </div>
+            <div class="me selection">
+              <label class="radioBtn">
+                <span class="input">
+                  <input type="radio" name="radio" />
+                  <span class="controlRadioBtn"></span>
+                </span>
+                <span class="labelRadioBtn">1 hour walk</span>
+              </label>
+
+              <h3>$49</h3>
+            </div>
           </div>
 
-          <p class="friend">Here are a few pictures. She’s a happy girl!</p>
-          <p class="friend">Can you make it?</p>
-          <p class="me">
-            She looks so happy! The time we discussed works. How long shall I
-            take her out for?
-          </p>
-
-          <div class="me selection">
-            <p>30 minute walk</p>
-            <h3>$29</h3>
+          <div id="write">
+            <div class="inputBox">
+              <input type="text" placeholder="Type a message…" />
+              <div class="submitBox"></div>
+            </div>
           </div>
-          <div class="me selection">
-            <p>1 hour walk</p>
-            <h3>$49</h3>
-          </div>
-        </div>
-
-        <div class="write">
-          <input type="text" placeholder="Type a message…" />
         </div>
       </section>
+
       <section id="title">
         <h1>Simple booking</h1>
 
