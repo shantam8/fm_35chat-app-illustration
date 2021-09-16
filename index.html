@@ -1,51 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+  </head>
+  <body>
+    <main>
+      <section id="phone">
+        <div class="topBar">
+          <div class="arrow"></div>
 
-  Samuel Green
-  Available to Walk
+          <div class="avatar">
+            <img src="./images/avatar.jpg" alt="avatar" />
+          </div>
 
-  That sounds great. I’d be happy with that.
+          <h3>Samuel Green</h3>
+          <p>Available to Walk</p>
 
-  Could you send over some pictures of your dog, please?
+          <div class="menu"></div>
+        </div>
 
-  Here are a few pictures. She’s a happy girl!
+        <div class="chatWindow">
+          <p class="me">That sounds great. I’d be happy with that.</p>
+          <p class="me">
+            Could you send over some pictures of your dog, please?
+          </p>
 
-  Can you make it?
+          <div class="imageBox">
+            <img src="./images/dog-image-1.jpg" alt="dog1" />
+            <img src="./images/dog-image-2.jpg" alt="dog2" />
+            <img src="./images/dog-image-3.jpg" alt="dog3" />
+          </div>
 
-  She looks so happy! The time we discussed works. How long shall I take her out for?
+          <p class="friend">Here are a few pictures. She’s a happy girl!</p>
+          <p class="friend">Can you make it?</p>
+          <p class="me">
+            She looks so happy! The time we discussed works. How long shall I
+            take her out for?
+          </p>
 
-  30 minute walk
-  $29
+          <div class="me selection">
+            <p>30 minute walk</p>
+            <h3>$29</h3>
+          </div>
+          <div class="me selection">
+            <p>1 hour walk</p>
+            <h3>$49</h3>
+          </div>
+        </div>
 
-  1 hour walk
-  $49
+        <div class="write">
+          <input type="text" placeholder="Type a message…" />
+        </div>
+      </section>
+      <section id="title">
+        <h1>Simple booking</h1>
 
-  Type a message…
-
-  Simple booking
-
-  Stay in touch with our dog walkers through the chat interface. This makes it easy to 
-  discuss arrangements and make bookings. Once the walk has been completed you can rate 
-  your walker and book again all through the chat.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <p>
+          Stay in touch with our dog walkers through the chat interface. This
+          makes it easy to discuss arrangements and make bookings. Once the walk
+          has been completed you can rate your walker and book again all through
+          the chat.
+        </p>
+      </section>
+    </main>
+  </body>
 </html>
