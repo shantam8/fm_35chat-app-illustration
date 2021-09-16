@@ -455,8 +455,21 @@ p {
 
 #title p {
   margin-top: 1.5rem;
+  padding: 0;
   line-height: 1.5rem;
   color: #a39daa;
+}
+
+@media screen and (min-width: 40rem) {
+  #title p {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 50rem) {
+  #title p {
+    font-size: 1rem;
+  }
 }
 
 * {

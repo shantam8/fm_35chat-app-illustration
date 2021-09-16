@@ -19,7 +19,16 @@
 
   p {
     margin-top: 1.5rem;
+    padding: 0;
     line-height: 1.5rem;
     color: $darkGrayishViolet;
+
+    @media screen and (min-width:40rem){
+      font-size: 0.8rem;
+    }
+
+    @media screen and (min-width:50rem){
+      font-size: 1rem;
+    }
   }
 }
