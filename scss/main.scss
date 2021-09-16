@@ -1,5 +1,6 @@
 @import "colors";
 @import "fonts";
+@import "keyframes";
 
 @import "phone";
 @import "title";
@@ -32,9 +33,9 @@ body {
     height: 47rem;
     top: -16rem;
     left: -7rem;
-    background-image: linear-gradient(to Bottom, $lightMagenta, $lightViolet);
     border-bottom-left-radius: 30rem;
     border-bottom-right-radius: 30rem;
+    background-image: linear-gradient(to Bottom, $lightMagenta, $lightViolet);
     z-index: -1;
 
     @media screen and (min-width: 30rem) {
@@ -43,12 +44,14 @@ body {
       top: -15rem;
       left: -7rem;
     }
+
     @media screen and (min-width: 40rem) {
       width: 60%;
       height: 49rem;
       top: -15rem;
       left: -5rem;
     }
+
     @media screen and (min-width: 50rem) {
       width: 60%;
       height: 50rem;
@@ -62,18 +65,21 @@ body {
       top: -12rem;
       left: -21rem;
     }
+
     @media screen and (min-width: 70rem) {
       width: 29%;
       height: 52rem;
       top: -12rem;
       left: -9rem;
     }
+
     @media screen and (min-width: 80rem) {
       width: 26%;
       height: 50rem;
       top: -12rem;
       left: -3rem;
     }
+
     @media screen and (min-width: 100rem) {
       width: 29%;
       height: 56rem;
@@ -87,11 +93,11 @@ body {
     content: "";
     width: 70%;
     height: 30rem;
-    bottom: 0rem;
     right: -6rem;
-    background-color: lighten($lightGrayishViolet, 1%);
+    bottom: 0rem;
     border-top-left-radius: 30rem;
     border-top-right-radius: 30rem;
+    background-color: lighten($lightGrayishViolet, 1%);
     z-index: -1;
 
     @media screen and (min-width: 40rem) {
@@ -99,25 +105,20 @@ body {
     }
 
     @media screen and (min-width: 60rem) {
-      height: 44rem;
-      bottom: 0rem;
-      right: -14rem;
       width: 49%;
-    }
-
-    @media screen and (min-width: 70rem) {
-    }
-
-    @media screen and (min-width: 80rem) {
+      height: 44rem;
+      right: -14rem;
+      bottom: 0rem;
     }
   }
 
   main {
     padding-bottom: 5rem;
+
     @media screen and (min-width: 60rem) {
+      display: flex;
       width: 100vw;
       height: 100vh;
-      display: flex;
       justify-content: center;
       align-items: center;
       gap: 5rem;

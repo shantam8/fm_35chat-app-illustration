@@ -1,0 +1,29 @@
+@keyframes fadeIn {
+  0% {
+    transform: translateY(355px);
+  }
+  10% {
+    transform: translateY(310px);
+  }
+  23% {
+    transform: translateY(268px);
+  }
+  36% {
+    transform: translateY(215px);
+  }
+  49% {
+    transform: translateY(168px);
+  }
+  62% {
+    transform: translateY(135px);
+  }
+  75% {
+    transform: translateY(83px);
+  }
+  87% {
+    transform: translateY(42px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
