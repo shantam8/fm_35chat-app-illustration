@@ -134,7 +134,7 @@ p {
   padding: 10px;
   transition: all 0.2s ease-in-out;
   transform: translateY(355px);
-  animation: fadeIn 50s forwards 3s;
+  animation: fadeIn 30s forwards 2s;
 
   .me {
     align-self: flex-start;
@@ -237,6 +237,7 @@ p {
   h3 {
     font-size: 0.8rem;
     font-weight: 700;
+    color:$white;
   }
 }
 

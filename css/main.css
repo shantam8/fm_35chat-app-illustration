@@ -245,8 +245,8 @@ p {
   transition: all 0.2s ease-in-out;
   -webkit-transform: translateY(355px);
           transform: translateY(355px);
-  -webkit-animation: fadeIn 50s forwards 3s;
-          animation: fadeIn 50s forwards 3s;
+  -webkit-animation: fadeIn 30s forwards 2s;
+          animation: fadeIn 30s forwards 2s;
 }
 
 #chatWindow .me {
@@ -373,6 +373,7 @@ p {
 .selection h3 {
   font-size: 0.8rem;
   font-weight: 700;
+  color: white;
 }
 
 #write {
